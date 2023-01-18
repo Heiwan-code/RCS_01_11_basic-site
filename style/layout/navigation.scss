@@ -1,0 +1,40 @@
+.main-nav {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #3a8dff;
+    padding: 5px 60px  5px    40px;
+    //       top right bottom left
+    .menu-items-right {
+        display: flex;
+        justify-content: center;
+        // cross axis
+        align-items: center;
+        .menu-link {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+    .icon-link {
+       height: 100%;
+    }
+    .plane-button {
+        margin-right: auto;
+    }
+// .main-nav .menu-link:not(:last-child) {
+//     margin-right: 10px;
+// }
+
+// .main-nav .plane-button {
+//     margin-right: auto;
+// }
+
+// .main-nav .menu-link {
+//     height: 100%;
+// }
+
+// .main-nav .menu-link svg {
+//     height: 100%;
+//     width: auto;
+// }
