@@ -1,9 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 .main-nav {
+  position: fixed;
+  z-index: 99999;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
   height: 90px;
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #3a8dff;
   padding: 5px 60px 5px 40px;
+  background: #e2e7ee;
+  margin-bottom: 20px;
 }
 .main-nav .menu-items-right {
   display: flex;
@@ -28,7 +45,68 @@
   transition: fill 0.34s ease;
 }
 
+.btn {
+  padding: 3px 9px;
+  transition: color 0.55s ease, border-color 0.55s ease;
+}
+.btn--primary {
+  border: 2px solid #2e26a5;
+  border-radius: 5px;
+  color: #2e26a5;
+}
+.btn--primary:hover {
+  border-color: #0051ff;
+  color: #0051ff;
+}
+
 .icon-link svg {
   height: 100%;
   width: auto;
+}
+
+.fullwidth-banner {
+  width: 100%;
+  height: 95vh;
+  position: relative;
+}
+.fullwidth-banner .image-wrapper {
+  height: 100%;
+  width: 100%;
+}
+.fullwidth-banner .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.fullwidth-banner .text-wrapper {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 50%;
+  padding: 34px;
+  background-color: aliceblue;
+  border: 2px solid rgb(77, 77, 77);
+  border-top-right-radius: 40px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.cards-grid .card {
+  height: 300px;
+  background-color: rgb(32, 118, 192);
+  border: 1px solid black;
+}
+.cards-grid .card .tags-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cards-grid .card .tags-container .tag {
+  font-size: 32px;
+  border: 1px solid black;
+  padding: 5px;
+  white-space: nowrap;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,49 @@
+.plane-button {
+    &:hover {
+        path {
+            fill: #b698b6;
+        }
+    }
+    path {
+        fill: darkslategrey;
+        transition: fill 0.34s ease;
+    }
+}
+
+.btn {
+    // padding: 3px;
+    padding: 3px 9px;
+    // padding: 3px 9px 3px 9px;
+    transition: color 0.55s ease, border-color 0.55s ease;
+    &--primary {
+        border: 2px solid #2e26a5;
+        border-radius: 5px;
+        color: #2e26a5;
+        &:hover {
+            border-color: #0051ff;
+            color: #0051ff;
+        }
+    }
+    // &--secodary {
+
+    // }
+}
+
+.btn--primary {
+
+}
+
+.btn--primary:hover {
+            
+}
+
+.btn--secodary {
+        
+}
+
+.icon-link {
+    svg {
+        height: 100%;
+        width: auto;
+    }
+}

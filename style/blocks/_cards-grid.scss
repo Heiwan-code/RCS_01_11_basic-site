@@ -1,0 +1,21 @@
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    .card {
+        height: 300px;
+        // width: 300px;
+        background-color: rgb(32, 118, 192);
+        border: 1px solid black;
+        .tags-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .tag {
+                font-size: 32px;
+                border: 1px solid black;
+                padding: 5px;
+                white-space: nowrap;
+            }
+        }
+    }
+}
